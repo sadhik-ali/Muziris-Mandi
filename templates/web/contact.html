@@ -1,0 +1,120 @@
+{% extends "web/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+		
+		<!-- Section Main -->
+		<section id="breadcrumb" data-background="{% static 'web/img/demo/slides/02.jpg' %}" class="parallax-window">
+			<div>
+				<span class="section-suptitle text-center">Muziriz Mandhi</span>
+				<h1 class="section-title white-font text-center" style="color: white;">Contact us</h1>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li>Contact us</li>
+				</ul>
+			</div>
+		</section>
+		<!-- End Section Main -->
+
+		<!-- Section Contact -->
+		<section id="contact-detail" class="padd-100">
+
+		<div class="bg-img">
+				
+			<h2 class="section-title sep-type-2 text-center">Contact Details</h2>
+			<p class="section-resume">
+				We accept reservations for parties of up to 8 people. for parties of 10 or more. please call at <br />
+				<span>(00) 14525 5688</span> or email us at <a href="#">info@muziriz.com</a>.
+			</p>
+		</div>
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.77489487146!2d77.30124752310827!3d12.954459548453073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1705018014136!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			
+			<div class="bg-img">
+
+			<div class="container padd-bottom-100 padd-top-120">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="item-contact">
+							<i class="fa fa-phone"></i>
+							<b>Phone</b>
+							<p>+91 1234567809</p>
+							<p>+91 9876543201</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="item-contact">
+							<i class="fa fa-map-marker"></i>
+							<b>Address</b>
+							<p>
+								Kerala, India,
+								pin code : 0002929,
+								Muziriz Mandhi,
+								bangalore
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="item-contact">
+							<i class="fa fa-envelope"></i>
+							<b>Email</b>
+							<p>
+								<a href="#">muziriz@mandhi.com</a>
+							</p>
+							<p>
+								<a href="#">mandhi@example.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<span class="section-suptitle text-center">Fill Enquiry</span>
+			<h2 class="section-title sep-type-2 text-center">any questions?</h2>
+			<p class="section-resume">
+				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+			</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-reservation" id="form-contact">
+
+							<form action="2" method="post">
+								<div class="column">
+									<span>
+										<input type="text" name="name" placeholder="Name" class="required-field">
+									</span>
+									<span>
+										<input type="text" name="email" placeholder="Email Adress" class="required-field">
+									</span>
+								</div>
+								<div class="column">
+									<span>
+										<input type="text" name="sujet" placeholder="Subject" class="required-field">
+									</span>
+									<span>
+										<input type="text" name="phone" placeholder="Your Phone" class="required-field">
+									</span>
+								</div>
+								<div class="column">
+									<textarea name="message" placeholder="Message" class="required-field"></textarea>
+								</div>
+								<p class="text-center padd-top-30">
+									<button type="submit" class="btn-food">Send</button>
+								</p>								
+							</form>
+							
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+	</section>
+		<!-- End Section Contact -->
+	
+{% endblock %}

@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="author" content="Egprojets">
+	<meta name="description" content="" />
+	<title>Muziris Mandi</title>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700,300" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+	<!-- End Google Fonts -->
+
+	<!-- Contribute CSS Files -->
+	<link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'web/css/flaticon.css' %}" />
+	<!-- Contribute End CSS Files -->
+
+	<!-- Custom CSS Files -->
+	<link rel="stylesheet" href="{% static 'web/css/style.css' %}" />
+	<link rel="stylesheet" href="{% static 'web/css/responsive.css' %}" />
+	<!-- Custom CSS Files -->
+
+</head>
+
+<body>
+
+  {% include "web/partials/header.html" %}
+
+  {% block content %}
+  
+  {% endblock  %}
+
+  {% include "web/partials/footer.html" %}
+
+	<!-- Contribute JS Files -->
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="{% static 'web/js/egprojets.lib.js' %}"></script>
+	<!-- End Contribute JS Files -->
+
+	<!-- Custom JS Files -->
+	<script type="text/javascript" src="{% static 'web/js/egprojets.custom.js' %}"></script>
+    <!-- Custom JS Files -->
+</body>
+
+</html>

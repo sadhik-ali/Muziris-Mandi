@@ -62,9 +62,9 @@ body {
 /*------------------------------------------------------------------
 [2. Predefined CSS]
 --------------------------------------------------------------------*/
-.padd-100 {
+/* .padd-100 {
   padding: 100px 0;
-}
+} */
 
 .padd-80 {
   padding: 80px 0;
@@ -228,7 +228,7 @@ a:hover {
 }
 
 .parallax-window {
-  min-height: 400px;
+  min-height: 100vh;
   background: transparent;
 }
 
@@ -670,6 +670,7 @@ a:hover {
   text-align: center;
   position: relative;
 }
+
 #main-slider:after {
   content: "";
   position: absolute;
@@ -697,7 +698,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .section-slogan h2 {
-  font-size: 80px;
+  font-size: 60px;
   color: #fff;
   font-weight: 400;
   text-align: center;
@@ -708,9 +709,9 @@ a:hover {
   letter-spacing: 1px;
 }
 .section-slogan h3 {
-  font-size: 40px;
+  font-size: 30px;
   color: #fff;
-  font-family: "Architects Daughter";
+  /* font-family: "Architects Daughter"; */
   letter-spacing: 1px;
   text-align: center;
   margin: 0;
@@ -881,6 +882,7 @@ a:hover {
 /*------------------------------------------------------------------
 [6. Section Reservation / #reservation]
 --------------------------------------------------------------------*/
+
 .form-reservation {
   background: #000;
   padding-left: 50px;
@@ -2544,9 +2546,9 @@ a:hover {
 /*------------------------------------------------------------------
 [23. Section Contact-detail / #contact-detail]
 --------------------------------------------------------------------*/
-#contact-detail {
+/* #contact-detail {
   background: url(../img/demo/bg/10.jpg) center bottom no-repeat;
-}
+} */
 #contact-detail #maps {
   position: relative;
   min-height: 600px;
@@ -3280,7 +3282,7 @@ a:hover {
 [27. Section Footer/ #site-footer]
 --------------------------------------------------------------------*/
 #site-footer {
-  background: #212121;
+  background: #202020;
   padding-top: 100px;
 }
 
@@ -3578,7 +3580,7 @@ a:hover {
 .story-new strong{
   font-weight: 900; 
   font-family: 'Lora', serif; 
-  font-size: 43px; 
+  font-size: 35px; 
   letter-spacing: -2px; 
   text-transform: uppercase;
 }
@@ -3592,7 +3594,7 @@ a:hover {
 } */
 
 .story-new p {
-  font-size: 17px;
+  font-size: 13px;
   /* margin-top: 20px; */
   line-height: 31px;
   font-family: 'Open Sans';
@@ -3605,8 +3607,8 @@ a:hover {
 
 .story-new h4{
   font-weight: bold;
-  font-size: 20px; 
-  margin-bottom: 20px; 
+  font-size: 18px; 
+  margin-bottom: 10px; 
   display: inline-block;
 }
 
@@ -3653,3 +3655,9 @@ a:hover {
   background-size: cover;
 }
 
+.new2 {
+  margin-top: 50px !important;
+}
+.new3 {
+  margin-top: 100px;
+}

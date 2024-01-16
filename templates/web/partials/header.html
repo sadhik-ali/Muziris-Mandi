@@ -1,0 +1,45 @@
+		{% load static %}
+
+    <!-- Header -->
+		<header id="site-header">
+			<div class="nav-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul>
+								<li><i class="fa fa-envira"></i>Open hour - 10 am - 11 pm</li>
+								<li><i class="fa fa-phone"></i>+00 123 456 789 000</li>
+								<li><a href="#"><i class="fa fa-envelope"></i>support@example.com</a></li>
+								<li class="social-bloc">
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navbar" role="navigation">
+				<div class="container">
+					<div class="row">
+						<h1 class="sr-only">Food Lover</h1>
+			
+						<button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="menu-mobile visible-xs">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<ul class="nav navbar-nav navbar-collapse collapse">
+							<li><a href="{% url 'web:index' %}">Home</a></li>
+							<li><a href="{% url 'web:about' %}">about us</a></li>
+							<li><a href="{% url 'web:menu' %}">menu</a></li>
+							<li><a href="{% url 'web:blog' %}">blog</a></li>
+							<li><a href="{% url 'web:contact' %}">contact us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header -->

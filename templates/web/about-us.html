@@ -1,0 +1,104 @@
+{% extends "web/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+	<!-- Site Wrapper -->
+	<div id="site-wrapper">
+		
+		<!-- Section Main -->
+		<section id="breadcrumb" data-background="assets/img/demo/slides/02.jpg' %}" class="parallax-window">
+			<div>
+				<span class="section-suptitle text-center">MUZIRIS Mandhi</span>
+				<h1 class="section-title white-font text-center"  style="color: white;">About us</h1>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li>About us</li>
+				</ul>
+			</div>
+		</section>
+		<!-- End Section Main -->
+
+		<!-- Section Story -->
+		<section id="our-story" class="bg-img">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="story-description">
+							<span class="section-suptitle">Our Story</span>
+							<h2 class="section-title">Who We are & history</h2>
+							<p>
+								MUZIRIS MANDHI, situated in the vibrant city of Bangalore, is more than just a restaurant; it is a gastronomic haven meticulously crafted to bring the flavors of Yemen to the heart of South India. Established in [year] by [founder's name], our establishment is a testament to a lifelong passion for Yemeni cuisine and a commitment to preserving the culinary traditions of the region.Our appreciation for the cultural and culinary richness of Yemen. From the aromatic spice markets of Sana'a to the bustling kitchens of Aden, our founder's exploration of Yemeni flavors laid the foundation for MUZIRIS MANDHI.In the heart of Bangalore, MUZIRIS MANDHI has embarked on a mission to preserve tradition and honor the legacy of Yemeni culinary heritage.
+							</p>	
+						</div>
+					</div>
+					<br><br><br><div class="col-sm-6">
+						<img src="{% static 'web/img/mandi/img7.jpg' %}" alt="" class="img-responsive img-story">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Section Story -->
+
+	<!-- Section Services -->
+	<section id="services" class="padd-100 bg-img">
+		<div class="story-new">
+	<center>
+		<h4 class=" text-center">WHY CHOOSE US?</h4>
+		<br><strong class="section-title text-center">Best Services</strong>
+	</center>
+
+		<br><br><br><p class="section-resume">
+			Our menu is a symphony of Yemeni flavors, carefully curated to cater to diverse palates. From the iconic Mandhi to the aromatic Bint Al Sahn, each dish tells a story of tradition, spice, and culinary expertise.
+		</p>
+	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 service-item">
+					<i class="flaticon-food"></i>
+					<div>
+						<h4>Taste Harmony</h4>
+						<p>Immerse in delectable flavors crafted to perfection.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 service-item">
+					<i class="flaticon-cup"></i>
+					<div>
+						<h4>Ambient Bliss</h4>
+						<p>Revel in an ambiance that combines elegance and warmth</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 service-item">
+					<i class="flaticon-drink"></i>
+					<div>
+						<h4>Global Fusion</h4>
+						<p>Embark on a culinary journey where collide on your plate.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 service-item">
+					<i class="flaticon-notes"></i>
+					<div>
+						<h4>Local Sustainability</h4>
+						<p>Embrace a commitment to the community and the planet.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 service-item">
+					<i class="flaticon-fork-and-knife-in-cross"></i>
+					<div>
+						<h4>Interactive Dining</h4>
+						<p>Engage your senses with interactive dining experiences.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 service-item">
+					<i class="flaticon-percentage"></i>
+					<div>
+						<h4>Celebration Catering</h4>
+						<p>Elevate your special occasions with our catering services. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+	<!-- End Section Services -->
+		{% endblock  %}

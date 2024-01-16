@@ -1,0 +1,406 @@
+{% extends "web/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+		<!-- Section Main -->
+		<section id="breadcrumb" data-background="assets/img/demo/slides/02.jpg' %}" class="parallax-window">
+			<div>
+				<span class="section-suptitle text-center">Muziriz Mandhi</span>
+				<h1 class="section-title white-font text-center" style="color: white;">Menu</h1>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li>Menu</li>
+				</ul>
+			</div>
+		</section>
+		<!-- End Section Main -->
+
+		
+		<!-- Section Restaurant Menu -->
+		<section id="restaurant-menu" class="bg-img">
+			<div class="story-new container">
+			<center>
+				<h4 class="text-center">Muziris Mandhi</h4>
+				<br><strong class="section-title text-center">
+					resturant menu
+				</strong>
+			</center>
+				
+				<br><br><div>
+					<div class="row">
+						<ul class="restaurant-filter">
+							<li><a href="#" class="current" data-filter="">All dishes</a></li>
+							{% for menucat in menucategorys %}
+							<li><a href="#" data-filter="{{menucat.slug}}">{{menucat.name}}</a></li>
+							{% endfor %}
+						</ul>
+						<div class="restaurant-list">
+							<div class="grid-sizer col-sm-6 col-md-4"></div>
+							
+							{% for menu in menus %}
+							<div class="col-sm-6 col-md-4 grid-item" data-filter="{{menu.category.slug}}">
+								<div>
+									<a href="menu.html" target="_blank"><img src="{{menu.image.url}}" alt=""></a>
+									<span>₹ {{menu.price}}</span>
+									<h3>{{menu.name}}</h3>
+								</div>
+							</div>	
+							{% endfor %}
+				
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- End Section Restaurant Menu -->
+
+		<!-- Section Main Course -->
+		<section id="main-course" class="padd-100 bg-img">
+			<span class="section-suptitle text-center">Food Lover</span>
+			<h2 class="section-title sep-type-2 text-center">Main course</h2>
+			<p class="section-resume">
+				This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+			</p>
+			<div class="container">
+				<div class="row">
+					<div class="menu-carousel vertical-carousel">
+						<div class="menu-item">
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/14.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Kapeng Barako</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/15.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Espresso</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/16.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Caramel Machiatto</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹120</span>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/17.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Iced Mocha Amaretto</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/18.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Cappuccino</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/19.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Iced Mocha Butterscoth</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/02.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Bacon/Ham/Chorizo</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/03.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pring Veg & Pasta </h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/04.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pork & Chicken</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹120</span>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/05.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Plenty o Pepperoni</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/06.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>2-pc Pork BBQ ( 1 Side)</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/07.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Very Bacon </h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/05.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pring Veg & Pasta</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/06.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Bacon/Ham/Chorizo</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/07.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pork & Chicken</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹120</span>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/08.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>2-pc Pork BBQ ( 1 Side)</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/09.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Very Bacon</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/10.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Plenty o Pepperoni</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/02.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Bacon/Ham/Chorizo</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/03.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pring Veg & Pasta </h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/04.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pork & Chicken</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹120</span>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/05.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Plenty o Pepperoni</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/06.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>2-pc Pork BBQ ( 1 Side)</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/07.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Very Bacon </h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+							</div>
+						</div>
+						<div class="menu-item">
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/10.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pring Veg & Pasta</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/11.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Bacon/Ham/Chorizo</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/12.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Pork & Chicken</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹120</span>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/13.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>2-pc Pork BBQ ( 1 Side)</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/14.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Very Bacon</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹140</span>
+								</div>
+								<div class="offer-item">
+									<img src="{% static 'web/img/demo/offers/15.jpg' %}" alt="" class="img-responsive">
+									<div>
+										<h3>Plenty o Pepperoni</h3>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur Vesti bulum vel ipsum ullamcorper.
+										</p>
+									</div>
+									<span class="offer-price">₹100</span>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<!-- End Section Main Course -->
+
+{% endblock %}

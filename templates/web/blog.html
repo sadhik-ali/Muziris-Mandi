@@ -1,0 +1,138 @@
+{% extends "web/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+		<!-- Section Main -->
+		<section id="breadcrumb" data-background="assets/img/demo/slides/02.jpg' %}" class="parallax-window">
+			<div>
+				<span class="section-suptitle text-center">Muziriz Mandhi</span>
+				<h1 class="section-title white-font text-center"  style="color: white;">Blog</h1>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li>Blog category</li>
+				</ul>
+			</div>
+		</section>
+		<!-- End Section Main -->
+		
+		<!--
+		<section id="blog" class="padd-100">
+			<h2 class="sr-only">Blog</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<article class="blog-item">
+							<div class="entry-thumbnail">
+								<a title="" href="#">
+									<img src="{% static 'web/img/demo/blog/01.jpg' %}" alt="" class="img-responsive">
+								</a>
+							</div>
+							<div class="post-content">
+								<h2 class="entry-title">
+									Special food recipes for special occasions to our restaurant
+								</h2>
+								<div class="entry-content">
+									<ul class="meta">
+										<li>
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>My Admin</span>
+										</li>
+										<li>
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+											<span>6 days ago</span>
+										</li>
+										<li>
+											<i class="fa fa-commenting-o" aria-hidden="true"></i>
+											<span>10 Comments</span>
+										</li>
+									</ul>
+									<p class="extrait-post">
+										This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor eta Aenean sollicitudin, lorem qis um auctor, nisi elit consequat ipsum, necittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet uris. rbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+									</p>
+									<a class="btn-read-more" href="blog-single.html">Read More</a>
+								</div>
+							</div>
+						</article>
+					</div>
+						<div class="col-md-6">
+						<article class="blog-item">
+							<div class="entry-thumbnail">
+								<a title="" href="#">
+									<img src="{% static 'web/img/demo/blog/02.jpg' %}" alt="" class="img-responsive">
+								</a>
+							</div>
+							<div class="post-content">
+								<h2 class="entry-title">
+									Special food recipes for special occasions to our restaurant
+								</h2>
+								<div class="entry-content">
+									<ul class="meta">
+										<li>
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>My Admin</span>
+										</li>
+										<li>
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+											<span>6 days ago</span>
+										</li>
+										<li>
+											<i class="fa fa-commenting-o" aria-hidden="true"></i>
+											<span>10 Comments</span>
+										</li>
+									</ul>
+									<p class="extrait-post">
+										This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor eta Aenean sollicitudin, lorem qis um auctor, nisi elit consequat ipsum, necittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet uris. rbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+									</p>
+									<a class="btn-read-more" href="blog-single.html">Read More</a>
+								</div>
+							</div>
+						</article>
+					</div>
+					
+
+				</div>
+			</div>
+		</section>-->
+
+				<!-- Section Event -->
+				<section id="events" class="padd-100 bg-img">
+					<div class="story-new">
+						<center>
+					<h4>
+						RECENT UPDATES :
+					</h4>
+					
+					<br><strong class="section-title  text-center">
+						Latest Blog
+					</strong>
+				</center>
+				</div>
+					<br><br><div class="container">
+						<div class="row">
+							<div class="col-sm-12  no-padd">
+								
+								<ul class="event-carousel">
+		
+									{% for blog in blogs %}
+									<li class="event-item">
+										<img src="{{blog.image.url}}" alt="" class="img-responsive">
+										<div>
+											<h3>{{blog.name}}</h3>
+											<span>{{blog.date}}</span>
+											<a href="{% url 'web:blog_detail' blog.slug %}">Read More</a>
+										</div>
+									</li>
+									{% endfor %}
+		
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Section Events -->
+
+		
+		{% endblock %}

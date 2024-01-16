@@ -1,0 +1,60 @@
+{% extends "web/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+		
+		
+		<!-- Section Main -->
+		<section id="breadcrumb" data-background="assets/img/demo/slides/02.jpg' %}" class="parallax-window">
+			<div>
+				<span class="section-suptitle text-center">Muziriz Mandhi</span>
+				<h1 class="section-title white-font text-center">{{blog.name}}</h1>
+			</div>
+		</section>
+		<!-- End Section Main -->
+		
+		<!-- Section Contact -->
+		<section id="blog" class="padd-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="blog-single">
+							<div class="blog-item">
+								<div class="entry-thumbnail">
+									<a title="" href="#">
+										<img src="{{blog.image.url}}" alt="" class="img-responsive">
+									</a>
+								</div>
+								<div class="post-content">
+									<h2 class="entry-title meta">
+										{{blog.name}}
+									</h2>
+									<div class="entry-content">
+										
+										<p class="extrait-post">
+											{{blog.content}}
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="share-box">
+									<span>
+										Share Post :
+									</span>
+									<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+							</div>
+					
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</section>
+		<!-- End Section Contact -->
+
+{% endblock %}
